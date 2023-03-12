@@ -1,0 +1,88 @@
+[versions]
+kotlin = "1.8.10"
+androidDesugarJdkLibs = "1.2.2"
+androidGradlePlugin = "7.4.1"
+
+androidxActivity = "1.6.1"
+androidxComposeBom = "2023.01.00"
+androidxComposeCompiler = "1.4.3"
+androidxCore = "1.9.0"
+androidxLifecycle = "2.6.0"
+
+androidxNavigation = "2.5.3"
+
+dagger2 = "2.45"
+rxjava3 = "3.1.6"
+rxandroid = "3.0.2"
+rxkotlin = "3.0.1"
+datastore = "1.0.0"
+room = "2.5.0"
+retrofit = "2.9.0"
+okhttp = "4.10.0"
+
+junit4 = "4.13.2"
+androidxJunit4 = "1.1.5"
+androidxEspresso = "3.5.1"
+
+
+[libraries]
+
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+androidx-lifecycle-viewModelCompose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtimeCompose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLifecycle" }
+androidx-compose-livedata-rxjava3 = { group = "androidx.compose.runtime", name = "runtime-rxjava3" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3"}
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+
+dagger2-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger2"  }
+dagger2-daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger2"  }
+
+rxjava-rxjava3 = { group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxjava3"  }
+rxjava-rxandroid = { group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxandroid"  }
+rxjava-rxkotlin = { group = "io.reactivex.rxjava3", name = "rxkotlin", version.ref = "rxkotlin"  }
+
+datastore-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore"  }
+datastore-rxjava3 = { group = "androidx.datastore", name = "datastore-rxjava3", version.ref = "datastore"  }
+
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-rxjava3 = { group = "androidx.room", name = "room-rxjava3", version.ref = "room" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+
+
+junit4 = { group = "junit", name = "junit", version.ref = "junit4" }
+androidxJunit4 = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit4" }
+androidxEspresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+
+[plugins]
+
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
